@@ -7,5 +7,24 @@ body{
     height: 100vh;
     background-image: url(/bottle-truth-or-dare/images/background1.jpg);
     background-size: cover;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 150px; */
+    align-items: center;
 }
+/* top container */
+.top-container img{
+    width: 90px;
+}
+.top-container{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    align-items: center;
+    margin-top: 25px;
+}
+.bottle-container img{
+    width: 200px;
+}
+
