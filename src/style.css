@@ -16,6 +16,7 @@ body{
 /* top container */
 .top-container img{
     width: 90px;
+    cursor: pointer;
 }
 .top-container{
     display: flex;
