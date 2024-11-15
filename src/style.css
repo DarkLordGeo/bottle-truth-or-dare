@@ -80,22 +80,37 @@ body{
     justify-content: center;
     align-items: center;
 }
+#bottleImage{
+    padding: 0.1px;
+}
+.animation{
+    animation: spin 10s infinite linear;
+}
+/* @keyframes spin {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+} */
 .bottle-image img{
     width: 120px;
+}
+.bottle-image:nth-child(1) img{
+    width: 80px;
+}
+.bottle-image:nth-child(2) img{
+    margin-bottom: -45px;
+    width: 80px;
 }
 .bottle-image:nth-child(3) img{
     width: 80px;
 }
-.bottle-image:nth-child(4) img{
-    margin-top: 25px;
-    width: 85px;
-}
-.bottle-image:nth-child(5) img{
-    width: 55px;
-}
-.bottle-image:nth-child(6) img{
+/* .bottle-image:nth-child(4) img{
     width: 80px;
-}
+} */
+
 .bottle-grid{
     width: 700px;
     height: 400px;
