@@ -12,14 +12,44 @@
             <div class="top-container">
                 <div class="spacing-container"></div>
                 <div class="settings-image-container">
-                    <img src="/bottle-truth-or-dare/images/settings.png" alt="">
+                    <img src="/bottle-truth-or-dare/images/settings.png" alt="" id="settings" onclick="openMenu()">
                 </div>
             </div>
             <div class="bottle-container">
-                <img src="/bottle-truth-or-dare/images/pngegg (4).png" alt="">
+                <img src="/bottle-truth-or-dare/images/green.png" alt="" id="bottle">
             </div>
             <div class="bottom-container">
-                
+            </div>
+        </div>
+        <div class="menu">
+            <div class="bottle-theme" onclick="openSubMenu()">
+                <h3>change bottle</h3>
+            </div>
+            <div class="bottle-grid">
+                <div class="bottle-image">
+                    <img id="bottleImage" src="/bottle-truth-or-dare/images/transperent.png" alt="" onclick="changeContent(this) ">
+                </div>
+                <div class="bottle-image">
+                    <img id="bottleImage" src="/bottle-truth-or-dare/images/waste.png" alt="" onclick="changeContent(this)">
+                </div>
+                <div class="bottle-image">
+                    <img id="bottleImage" src="/bottle-truth-or-dare/images/wine.png" alt="" onclick="changeContent(this)">
+                </div>
+                <div class="bottle-image">
+                    <img id="bottleImage" src="/bottle-truth-or-dare/images/water.png" alt="" onclick="changeContent(this)">
+                </div>
+                <div class="bottle-image">
+                    <img id="bottleImage" src="/bottle-truth-or-dare/images/beer.png" alt="" onclick="changeContent(this)">
+                </div>
+                <div class="bottle-image">
+                    <img id="bottleImage" src="/bottle-truth-or-dare/images/cola.png" alt="" onclick="changeContent(this)">
+                </div>
+            </div>
+            <div class="copyright">
+                <p>
+                    &copy;DarkLordGeo, 2024. All rights reserved. Some background images are sourced from PNGWing and are used in accordance with their terms of service. All other code and content in "Bottle Truth or Dare" were created by Lasha.
+                    Disclaimer: Images sourced from PNGWing are user-submitted and may be subject to copyright by their original creators. Use of these images is done at my own risk, and I assume full responsibility for compliance with copyright law.
+                </p>
             </div>
         </div>
     </main>

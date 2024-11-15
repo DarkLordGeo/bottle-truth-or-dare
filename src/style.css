@@ -1,6 +1,7 @@
 body{
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .background-container{
     width: 100%;
@@ -13,6 +14,7 @@ body{
     /* gap: 150px; */
     align-items: center;
 }
+
 /* top container */
 .top-container img{
     width: 90px;
@@ -25,7 +27,91 @@ body{
     align-items: center;
     margin-top: 25px;
 }
-.bottle-container img{
+#bottle{
     width: 200px;
+    animation: spin 0.3s infinite linear;
+    cursor: pointer;
+}
+.menu{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #d3b683;
+    border-radius: 25px;
+    border: 7px solid rgb(0, 0, 0);
+    display: none;
+    padding: 50px;
+}
+.menu.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
 }
 
+/* change bottle menu */
+.bottle-theme{
+    user-select: none;
+    width: 300px;
+    height:80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-size: 22px;
+    background-color: #845162;
+    border-radius: 25px;
+    border: 2px solid rgba(255, 0, 0, 0.274);
+    cursor: pointer;
+}
+.bottle-image{
+    width: 210px;
+    height: 180px;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+    border: 1px solid rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+}
+.bottle-image img{
+    width: 120px;
+}
+.bottle-image:nth-child(3) img{
+    width: 80px;
+}
+.bottle-image:nth-child(4) img{
+    margin-top: 25px;
+    width: 85px;
+}
+.bottle-image:nth-child(5) img{
+    width: 55px;
+}
+.bottle-image:nth-child(6) img{
+    width: 80px;
+}
+.bottle-grid{
+    width: 700px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.337);
+    border: 1px solid black;
+    border-radius: 25px;
+    display: none;
+    position: absolute;
+
+    top: 35%;
+}
+.bottle-grid.subMenuBg{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    place-items: center;
+}
+.copyright{
+    text-align: center;
+}
